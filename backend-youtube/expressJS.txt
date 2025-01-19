@@ -1,0 +1,18 @@
+Các bước tạo source express JS
+- npm init để tạo file package.json
+- cài thư viện express JS: npm i express
+- tạo file index.js
+- Thêm script: "start": "nodemon start"
+
+Khi push code code BE nodejs lên git 
+    - ignore folder node_modules
+    => tạo file .gitignore 
+
+lấy info qua params, query, body, header
+
+cài thư viện mysql2, dotenv
+tạo file .env, db.js 
+
+tách thành mô hình MVC
+
+viết logic ở userController -> export -> import vào userRoutes : userRoutes.get("/get-users", getUsers);
