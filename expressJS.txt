@@ -1,8 +1,0 @@
-Các bước tạo source express JS
-- npm init để tạo file package.json
-- cài thư viện express JS: npm i express
-- tạo file index.js
-
-Khi push code code BE nodejs lên git 
-    - ignore folder node_modules
-    => tạo file .gitignore 
