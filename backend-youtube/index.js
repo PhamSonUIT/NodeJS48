@@ -1,11 +1,14 @@
 import express from "express";
-import connect from "./db.js";
 import rootRoutes from "./src/routes/rootRoutes.js";
+import cors from "cors"; // giup cho BE co the connect voi FE
 const app = express();
 
 // parse body từ string -> JSON
 app.use(express.json());
 
+app.use(cors());
+
+app.use(express.static("."));
 // sử dụng rootRoutes
 app.use(rootRoutes);
 
@@ -65,8 +68,6 @@ app.post("/get-body", (req, res) => {
 //     return res.send(`Error: ${error}`);
 //   }
 // });
-
-
 
 //api create user
 // app.post("/create-user", async (req, res) => {
