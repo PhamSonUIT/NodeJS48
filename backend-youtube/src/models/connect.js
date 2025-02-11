@@ -10,6 +10,7 @@ const connect = new Sequelize(
         host: process.env.DB_HOST,
         dialect:'mysql',
         port: process.env.DB_PORT,
+        logging: false
     }
 
 );
