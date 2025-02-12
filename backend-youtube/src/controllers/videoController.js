@@ -135,7 +135,6 @@ const deleteVideo = async (req, res) => {
     console.log("dữ liệu cần xoá", video_name);
 
     const result = await models.videos.destroy( 
-      { video_name: video_name },
       { where: { video_id: id } }
     );
     console.log(result);
